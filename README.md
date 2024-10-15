@@ -1,27 +1,50 @@
-# Babycreche
+# Plateforme de Gestion de Crèche - Front-End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Ce projet est le front-end de la plateforme de gestion de crèche, développé avec **Angular**. Il permet aux utilisateurs de gérer facilement les inscriptions, les présences et la communication entre les parents et la crèche. 
 
-## Development server
+## Développeurs Front-End
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Ezeckiel Wilfried**
+- **Dagnogo**
+- **Dongui**
+- **Kouadio Tia Emmanuel**
 
-## Code scaffolding
+## Prérequis
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Node.js** (version 14 ou supérieure)
+- **Angular CLI** (version 12 ou supérieure)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clonez le projet :
+   ```bash
+   git clone https://github.com/nom-utilisateur/gestion_creche_front-end.git
+Accédez au répertoire du projet :
 
-## Running unit tests
+bash
+Copier le code
+cd gestion_creche_front-end
+Installez les dépendances :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  npm install
+```
 
-## Running end-to-end tests
+Lancer le projet
+Démarrez le serveur de développement :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+````
+Accédez à l'application dans votre navigateur à l'adresse suivante :
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+http://localhost:4200
+
+Fonctionnalités
+Inscription des enfants
+Suivi des présences
+Communication entre les parents et les éducateurs
+Gestion des activités et des rapports quotidiens
+
+
