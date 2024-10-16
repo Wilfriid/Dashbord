@@ -9,6 +9,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { TarifComponent } from './tarif/tarif.component';
 import { ContactComponent } from './contact/contact.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'tarif', // Chemin pour InscriptionComponent
     component: TarifComponent,
+  },
+  {
+    path: 'payement', // Chemin pour InscriptionComponent
+    component: PaymentComponent,
   },
   {
     path: '',

@@ -13,6 +13,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { TarifComponent } from './tarif/tarif.component';
 import { ContactComponent } from './contact/contact.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     ConnexionComponent,
     TarifComponent,
     ContactComponent,
+    PaymentComponent,
 
   ],
   providers: [],

@@ -6,7 +6,7 @@ header {
     justify-content: center;
     align-items: center; 
     width: 100%; 
-    height: 750px; 
+    height: 650px; 
     
     color: white; 
     background-image: url("/assets/img/boy.jpg");
@@ -113,86 +113,28 @@ header {
   }
 
   /*  */
- /* .part3{
+  .contact-info {
     width: 100%;
-    height: 200%;
+    height: 300px;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid red;
- 
- } */
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    /* flex-wrap: wrap; 
+    gap: 20px;  */
+}
 
- /* .part3 {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  } */
-  
-  .part2min2 {
-    margin-top: 20px;
-  }
-  
-  h3 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Mettre en gras */
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 12px; /* Augmenter le padding pour plus de confort */
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Coins arrondis */
-    transition: border-color 0.3s; /* Animation douce */
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #28a745; /* Couleur de bordure au focus */
-    outline: none; /* Supprimer le contour par défaut */
-  }
-  
-  textarea {
-    height: 100px; /* Hauteur fixe pour le textarea */
-    resize: none; /* Désactiver le redimensionnement */
-  }
-  
-  button {
-    padding: 12px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px; /* Coins arrondis */
-    cursor: pointer;
-    width: 100%; /* Bouton plein largeur */
-    transition: background-color 0.3s; /* Animation douce */
-  }
-  
-  button:hover {
-    background-color: #218838; /* Couleur au survol */
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
-  .success-message {
-    margin-top: 20px;
-    color: green;
-    text-align: center; /* Centrer le message */
-  }
-  
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    min-width: 300px; 
+}
+
+.contact-item p {
+    margin: 0;
+    color: #fff; 
+    font-size: 20px;
+}
