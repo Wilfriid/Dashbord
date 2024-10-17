@@ -1,5 +1,8 @@
+// src/app/auth/inscription/inscription.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../core/services/auth.service'
 
 @Component({
   selector: 'app-inscription',
@@ -9,25 +12,29 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class InscriptionComponent implements OnInit {
   inscriptionForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private authService: AuthService) {}
 
   ngOnInit(): void {
     this.inscriptionForm = this.fb.group({
       username: ['', [Validators.required]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      profession: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      telephone: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
-      lien: ['', [Validators.required]]
+      password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
 
-  // Méthode pour soumettre le formulaire
   onSubmit() {
     if (this.inscriptionForm.valid) {
       const formData = this.inscriptionForm.value;
-      console.log('Données du formulaire:', formData);
-      // Envoyer les données au serveur ou effectuer d'autres actions
+      this.authService.register(formData).subscribe(
+        response => {
+          console.log('Inscription réussie!', response);
+          // Gérer le succès ici, par exemple rediriger vers la page de connexion
+        },
+        error => {
+          console.error('Erreur lors de l\'inscription', error);
+          // Gérer les erreurs ici
+        }
+      );
     }
   }
 }
